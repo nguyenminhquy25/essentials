@@ -1,0 +1,24 @@
+.showcase {
+    background-color: #1e90ff;
+    padding: 50px 0px;
+}
+.showcase-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.showcase-item {
+    width: 23%;
+    box-shadow: rgb(33 33 33 / 6%) 0 4px 24px 5px;
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.showcase-item img {
+    width: 100%;
+}
+.showcase-title h2 {
+    color: white !important;
+}
+.showcase-title p {
+    color: white !important;
+}

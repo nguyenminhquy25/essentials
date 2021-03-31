@@ -1,0 +1,52 @@
+.about {
+    width: 80%;
+    margin: auto;
+    background-color: #fafbfc;
+}
+.about-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-item {
+    width: 30%;
+    text-align: center;
+}
+.about-item-title {
+    padding: 10px 0px;
+    font-size: 26px;
+    color: #292929;
+    font-family: 'Dosis', sans-serif;
+}
+.about-item-text {
+    padding: 10px 0px 20px;
+    color: #7c8595;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-image-container {
+    width: 60%;
+    margin: auto;
+}
+.about-item img {
+    width: 100%;
+}
+.about-item-button {
+    font-family: 'Dosis', sans-serif;
+    outline: none;
+    font-size: 16px;
+    color: #1089d4;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #1089d4;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.about-item-button:hover {
+    color: white;
+    background-color: #1089d4;
+}

@@ -1,0 +1,80 @@
+.team {
+    background-color: #fafbfc;
+    padding: 50px;
+}
+.team-items {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.team-item {
+    width: 30%;
+    box-shadow: rgb(33 33 33 / 6%) 0 4px 24px 5px;
+    padding: 0px 0px 30px;
+}
+.team-item img {
+    width: 100%;
+}
+.team-item h3 {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.2;
+    color: #454545;
+    padding: 20px 0px 10px;
+}
+.team-item div {
+    text-align: center;
+}
+.team-item-title {
+    color: #acacac;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.team-item-description {
+    padding: 0px 20px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7c8595;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
+    margin: auto;
+    padding: 0px 0px 20px;
+}
+.team-item-icons {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+.team-icon-container {
+    width: 20%;
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+.team-icon-container i {
+    color: white;
+}
+.twitter {
+    background-color: #4099ff;
+}
+.pinterest {
+    background-color: #c92228;
+}
+.linkedin {
+    background-color: #3b5998;
+}
+.dribbble {
+    background-color: #ea4c89;
+}
+.border-div {
+    width: 50px;
+    margin: auto;
+    border-bottom: 3px solid #4099ff;
+    margin-bottom: 20px;
+}

@@ -10,7 +10,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Pricing from './components/Pricing';
 import Team from './components/Team';
-import ShowCase from './components/ShowCase';
+import Showcase from './components/Showcase';
 import Features from './components/Features';
 import Blog from './components/Blog';
 import './css/home.css';
@@ -26,42 +26,13 @@ import 'font-awesome/css/font-awesome.min.css';
 function App(props) {
   return (
     <>
-      <Router>
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/team">Team</Link>
-          <Link to="/showcase">Showcase</Link>
-          <Link to="/features">Features</Link>
-          <Link to="/blog">Blog</Link>
-        </div>
-        <div>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/about" exact>
-              <About />
-            </Route>
-            <Route path="/pricing" exact>
-              <Pricing />
-            </Route>
-            <Route path="/team" exact>
-              <Team />
-            </Route>
-            <Route path="/showcase" exact>
-              <ShowCase />
-            </Route>
-            <Route path="/features" exact>
-              <Features />
-            </Route>
-            <Route path="/blog" exact>
-              <Blog />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <Home />
+      <About />
+      <Pricing />
+      <Team />
+      <Showcase />
+      <Features />
+      <Blog />
     </>
   );
 }

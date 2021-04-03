@@ -153,8 +153,9 @@
 .pricing-questions {
     display: flex;
     justify-content: center;
-    padding: 30px 0px;
+    padding: 80px 0px;
     border: 1px solid #efefef;
+    background-color: white;
 }
 .pricing-questions-left {
     width: 600px;

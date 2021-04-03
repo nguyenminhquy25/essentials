@@ -28,10 +28,12 @@
 }
 .features-carousel {
     background-color: #fafbfc;
-    padding: 50px 400px;
+    padding: 50px 300px;
+    position: relative;
 }
 .features-carousel-item {
     text-align: center;
+    display: none;
 }
 .features-carousel-image {
     width: 100px;
@@ -77,15 +79,134 @@
 .features-active-index {
     background-color: #1e90ff;
 }
+.features-next-slide {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.features-prev-slide {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.features-next-slide:hover {
+    opacity: 1;
+}
+.features-prev-slide:hover {
+    opacity: 1;
+}
+.features-chart {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.features-chart-left {
+    width: 600px;
+    padding: 10px 50px;
+}
+.features-chart-right {
+    width: 500px;
+}
+.features-chart-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+.features-chart-title {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.2;
+    color: #071e55;
+    font-weight: 600;   
+    font-size: 28px;
+    padding: 10px 0px 20px;
+}
+.features-chart-text {
+    color: #7c8595;
+    font-size: 17px;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+}
+.features-benefits {
+    padding: 20px 0px;
+}
+.features-benefit {
+    padding: 5px 0px;
+}
+.features-benefit-icon {
+    color: #1e90ff;
+    padding-right: 10px;
+}
+.features-benefit-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #858585;
+}
+.features-chart-button {
+    color: white;
+    background-color: #1089d4;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 30%);
+    border: none;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+
+}
 @media screen and (max-width: 1200px) {
     .features-items {
         width: 95%;
+    }
+    .features-carousel {
+        padding: 50px 200px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .features-chart {
+        padding: 50px 20px;
+    }
+    .features-next-slide {
+        right: 5%;
+    }
+    .features-carousel {
+        padding: 50px 100px;
+    }
+    .features-prev-slide {
+        left: 5%;
+    }
+    .features-chart-left {
+        width: 500px;
+        padding: 10px 20px;
     }
 }
 @media screen and (max-width: 768px) {
     .features-item {
         width: 70%;
         margin: 20px auto;
+    }
+    .features-chart {
+        flex-wrap: wrap;
+        padding: 50px 0px;
+    }
+    .features-chart-left {
+        width: 90%;
+        margin: 20px auto 50px;
+    }
+    .features-chart-right {
+        width: 90%;
+        margin: auto;
     }
 }
 @media screen and (max-width: 600px) {

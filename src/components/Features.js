@@ -7,6 +7,7 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Features = () => {
     return (
@@ -34,6 +35,7 @@ const Features = () => {
                     consequat nihis etim." />
             </div>
             <FeaturesCarousel />
+            <FeaturesChart />
         </div>
     )
 };
@@ -48,26 +50,45 @@ const FeaturesItem = (props) => {
 };
 const FeaturesCarousel = (props) => {
     const [featuresActiveSlide, setFeaturesActiveSlide] = useState(0);
+    const [isNext, setIsNext] = useState(null);
     useEffect(() => {
         var slides = document.getElementsByClassName("features-carousel-item");
         var indexs = document.getElementsByClassName("features-carousel-index");
-        for(let i = 0; i < slides.length; i++) {
-            if(slides[i].classList.contains("features-active-slide")) {
-                slides[i].classList.remove("features-active-slide");
-                slides[(i + 1) % 3].classList.add("features-active-slide");
-                indexs[i].classList.remove("features-active-index");
-                indexs[(i + 1) % 3].classList.add("features-active-index");
-                return;
-            }  
+        if(isNext == null) {    
+            slides[featuresActiveSlide].classList.add("features-active-slide");
+            indexs[featuresActiveSlide].classList.add("features-active-index");
+            return;
         }
-        slides[showcaseActiveSlide].classList.add("features-active-slide");
-        indexs[featuresActiveSlide].classList.add("features-active-index");
+        else if(isNext) {
+            for(let i = 0; i < slides.length; i++) {
+                if(slides[i].classList.contains("features-active-slide")) {
+                    slides[i].classList.remove("features-active-slide");
+                    slides[(i + 1) % 3].classList.add("features-active-slide");
+                    indexs[i].classList.remove("features-active-index");
+                    indexs[(i + 1) % 3].classList.add("features-active-index");
+                    return;
+                }  
+            }
+        }
+        else {
+            for(let i = 0; i < slides.length; i++) {
+                if(slides[i].classList.contains("features-active-slide")) {
+                    slides[i].classList.remove("features-active-slide");
+                    slides[(i + 2) % 3].classList.add("features-active-slide");
+                    indexs[i].classList.remove("features-active-index");
+                    indexs[(i + 2) % 3].classList.add("features-active-index");
+                    return;
+                }  
+            }
+        }
     }, [featuresActiveSlide]);
     var nextSlide = () => {
         setFeaturesActiveSlide((featuresActiveSlide + 1) % 3);
+        setIsNext(true);
     };
     var prevSlide = () => {
         setFeaturesActiveSlide((featuresActiveSlide + 2) % 3);
+        setIsNext(false);
     }
     return (
         <div className="features-carousel">
@@ -86,8 +107,8 @@ const FeaturesCarousel = (props) => {
                 <div className="features-carousel-index"></div>
                 <div className="features-carousel-index"></div>
             </div>
-            <button className="features-next-slide"><FontAwesomeIcon icon={faForward} /></button>
-            <button className="features-prev-slide"><FontAwesomeIcon icon={faBackward} /></button>
+            <button className="features-prev-slide" onClick={prevSlide}><FontAwesomeIcon icon={faBackward} /></button>
+            <button className="features-next-slide" onClick={nextSlide}><FontAwesomeIcon icon={faForward} /></button>
         </div>
     );
 };
@@ -100,5 +121,32 @@ const FeaturesCarouselItem = (props) => {
         </div>
     );
 };
-
+const FeaturesChart = (props) => {
+    return (
+        <div className="features-chart">
+            <div className="features-chart-left">
+                <h3 className="features-chart-title">Get ready to discover all the benefits and secrets of our amazing software.</h3>
+                <p className="features-chart-text">Velis demo enim ipsam voluptatem quia voluptas sit aspernatur netsum lorem fugit, 
+                    sed quia magni dolores eos qui ratione sequi nesciunt neque et poris ratione sequi enim quia tempor magni.</p>
+                <div className="features-benefits">
+                    <FeaturesChartBenefit benefit="Quia magni netsum eos qui ratione sequi."/>
+                    <FeaturesChartBenefit benefit="Venis ratione sequi enim quia tempor magni."/>
+                    <FeaturesChartBenefit benefit="Enim ipsam voluptatem quia voluptas."/>
+                </div>
+                <button className="features-chart-button">Get Started</button>
+            </div>
+            <div className="features-chart-right">
+                <img src="/images/img0.png"></img>
+            </div>
+        </div>
+    );
+}
+const FeaturesChartBenefit = (props) => {
+    return (
+        <div className="features-benefit">
+            <span className="features-benefit-icon"><FontAwesomeIcon icon={faCheck} /></span>
+            <span className="features-benefit-text">{props.benefit}</span>
+        </div>
+    );
+};
 export default Features;

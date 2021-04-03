@@ -13,7 +13,7 @@ const Team = () => {
                 <TeamItem src="/images/team4.jpg" name="ANDRES JOHANSON" title="Marketing Manager" description="
                     Andres fell in love with marketing at the school and looks forward to being part 
                     of the industry for years."/>
-                <TeamItem src="/images/team3.jpg" name="ALEXANDRA SMITHS" title="ALEXANDRA SMITHS" description="
+                <TeamItem src="/images/team3.jpg" name="ALEXANDRA SMITHS" title="SEO Specialist" description="
                     Graduating with a degree in Spanish, English and French, she has always loved writing."/>
             </div>
         </div>

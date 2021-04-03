@@ -1,18 +1,37 @@
 import React from 'react';
 import TopTitle from './TopTitle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 const Features = () => {
     return (
-        <div>   
+        <div className="features">   
             <TopTitle title="Amazing Features" text="There are many variations of passages of Lorem Ipsum available, but the majority
                 have suffered alteration, by injected humour, or new randomised words."/>
-            <div>
-                <FeaturesItem icon={<i class="fa fa-tachometer-alt"></i>} />
-                <FeaturesItem icon={<i class="fa fa-chart-line"></i>} />
-                <FeaturesItem icon={<i class="fa fa-bell"></i>} />
-                <FeaturesItem icon={<i class="fa fa-hand-holding-usd"></i>} />
-                <FeaturesItem icon={<i class="fa fa-rocket"></i>} />
-                <FeaturesItem icon={<i class="fa fa-rocketchat"></i>} />
+            <div className="features-items">   
+                <FeaturesItem icon={<FontAwesomeIcon icon={faTachometerAlt} />} title="Powerful Dashboard" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
+                <FeaturesItem icon={<FontAwesomeIcon icon={faChartLine} />} title="User Friendly" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
+                <FeaturesItem icon={<FontAwesomeIcon icon={faBell} />} title="Smart Notifications" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
+                <FeaturesItem icon={<FontAwesomeIcon icon={faHandHoldingUsd} />} title="Cost Control" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
+                <FeaturesItem icon={<FontAwesomeIcon icon={faRocket} />} title="Unique Features" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
+                <FeaturesItem icon={<FontAwesomeIcon icon={faComment} />} title="Support 24/7" text="
+                    Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle 
+                    consequat nihis etim." />
             </div>
         </div>
     )

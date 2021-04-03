@@ -48,7 +48,7 @@
 }
 .team-item-icons {
     display: flex;
-    width: 60%;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
 }
@@ -77,4 +77,21 @@
     margin: auto;
     border-bottom: 3px solid #4099ff;
     margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .team-items {
+        width: 100%;
+    }
+    .team-item-icons {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .team-items {
+        flex-wrap: wrap;
+    }
+    .team-item {
+        width: 80%;
+        margin: auto;
+    }
 }

@@ -82,3 +82,17 @@
     background-color: #1e90ff;
     color:white;
 }
+@media screen and (max-width: 1200px) {
+    .pricing-items {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .pricing-items {
+        flex-wrap: wrap;
+    }
+    .pricing-item {
+        width: 70%;
+        margin: 0px auto 30px;
+    }
+}

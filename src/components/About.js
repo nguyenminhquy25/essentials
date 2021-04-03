@@ -6,7 +6,7 @@ const About = () => {
         <div className="about">
             <TopTitle title="Integrated solutions designed for small business" text="Communicate with flexible 
                             tools that go where your team goes."/>
-            <div className="about-item-container">
+            <div className="about-items-container">
                 <AboutItem src="/images/main-service1.png" title="Designer" text="Curabitur quam etsum lacus netsum nulat iaculis 
                 ets vitae etsum nisle varius sed aliquam ets vitae netsum." buttonText="Essentials for Designers"/>
                 <AboutItem src="/images/main-service2.png" title="Marketers" text="Curabitur quam etsum lacus netsum nulat iaculis 

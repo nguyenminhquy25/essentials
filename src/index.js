@@ -12,6 +12,7 @@ import Pricing from './components/Pricing';
 import Team from './components/Team';
 import ShowCase from './components/ShowCase';
 import Features from './components/Features';
+import Blog from './components/Blog';
 import './css/home.css';
 import './css/about.css';
 import './css/top-title.css';
@@ -19,8 +20,8 @@ import './css/pricing.css';
 import './css/team.css';
 import './css/showcase.css';
 import './css/features.css';
+import './css/blog.css';
 import 'font-awesome/css/font-awesome.min.css';
-
 
 function App(props) {
   return (
@@ -34,7 +35,6 @@ function App(props) {
           <Link to="/showcase">Showcase</Link>
           <Link to="/features">Features</Link>
           <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contact</Link>
         </div>
         <div>
           <Switch>
@@ -55,6 +55,9 @@ function App(props) {
             </Route>
             <Route path="/features" exact>
               <Features />
+            </Route>
+            <Route path="/blog" exact>
+              <Blog />
             </Route>
           </Switch>
         </div>

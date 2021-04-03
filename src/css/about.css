@@ -1,15 +1,15 @@
 .about {
-    width: 80%;
-    margin: auto;
     background-color: #fafbfc;
+    padding: 0px 0px 20px;
 }
-.about-item-container {
+.about-items-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .about-item {
     width: 30%;
     text-align: center;
+    padding: 0px 20px;
 }
 .about-item-title {
     padding: 10px 0px;
@@ -26,7 +26,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 .about-image-container {
-    width: 60%;
+    width: 200px;
     margin: auto;
 }
 .about-item img {
@@ -49,4 +49,14 @@
 .about-item-button:hover {
     color: white;
     background-color: #1089d4;
+}
+@media screen and (max-width: 768px) {
+    .about-items-container {
+        flex-wrap: wrap;
+    }
+    .about-item {
+        width: 80%;
+        margin: auto;
+        padding: 40px 0px;
+    }
 }

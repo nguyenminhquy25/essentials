@@ -1,0 +1,82 @@
+.blog-items {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.blog-item {
+    width: 25%;
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: rgb(33 33 33 / 6%) 0 4px 24px 5px;
+}
+.blog-item a {
+    text-decoration: none;
+}
+.blog-item img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.blog-item-content {
+    padding: 20px 20px 30px;
+}
+.blog-title {
+    padding: 0px 0px 20px;
+}
+.blog-info {
+    padding: 0px 0px 20px;
+    display: flex;
+}
+.blog-info-item:first-child {
+    padding-right: 10px;
+    border-right: 1px solid #656565;
+}
+.blog-info-item:nth-child(2) {
+    padding: 0px 10px;
+}
+.blog-icon {
+    padding-right: 5px;
+}
+.blog-title a {
+    font-family: 'Dosis', sans-serif;
+    color: #071e55;
+    transition: all 0.5s;
+}
+.blog-title a:hover {
+    color: #007bff;
+}
+.blog-info a {
+    color: #656565;
+    transition: all 0.5s;
+    font-style: italic;
+    font-family: 'Dosis', sans-serif;
+}
+.blog-info a:hover {
+    color: #8f8e91;
+}
+.blog-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #7c8595;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+    .blog-items {
+        padding: 0px 20px;
+    }
+    .blog-item {
+        width: 30%;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .blog-items {
+        flex-wrap: wrap;
+    }
+    .blog-item {
+        width: 80%;
+        margin: 0px auto 30px;
+    }
+}

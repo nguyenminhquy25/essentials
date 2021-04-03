@@ -31,8 +31,7 @@
 .next-slide {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+    right: 10%;
     background: transparent;
     border: none;
     font-size: 20px;
@@ -43,8 +42,7 @@
 .prev-slide {
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
+    left: 10%;
     background: transparent;
     border: none;
     font-size: 20px;
@@ -78,4 +76,18 @@
 }
 .active-slide {
     display: block;
+}
+@media screen and (max-width: 992px) {
+    .showcase-items {
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .showcase-items {
+        flex-wrap: wrap;
+    }
+    .showcase-item {
+        width: 70%;
+        margin: 20px auto;
+    }
 }

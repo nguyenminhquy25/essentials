@@ -14,6 +14,7 @@ const Pricing = () => {
                 <PricingItem title="PRO" price="$199" expiryDate="Per Month" benefit={["All Standard Features", 
                         "50 Mailboxes, 90 Gb Storage", "Dedicated Account Manager", "24/7 Priority Support"]}/>
             </div>
+            <PricingQuote />
         </div>  
     )
 };
@@ -44,5 +45,20 @@ const PricingBenefit = (props) => {
             </div>
         </>
     );
+};
+const PricingQuote= (props) => {
+    return (
+        <div className="pricing-quote">
+            <div className="pricing-quote-left">
+                <h3 className="pricing-item-quote">“People who succeed in business aren't afraid to hear feedback from their customers -
+                     they actually thrive from it.”</h3>
+                <h4 className="pricing-item-author">Johanna S. Richardson</h4>
+                <p className="pricing-item-position">CEO Essentials</p>
+            </div>
+            <div className="pricing-quote-right">
+                <img src="/images/testimonials-woman.jpg"></img>
+            </div>
+        </div>
+    ); 
 };
 export default Pricing;

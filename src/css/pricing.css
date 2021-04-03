@@ -82,6 +82,31 @@
     background-color: #1e90ff;
     color:white;
 }
+.pricing-quote {
+    display: flex;
+    padding: 100px 100px 0px;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #efefef;;
+}
+.pricing-quote-left {
+    width: 50%;
+}
+.pricing-quote-right {
+    width: 40%;
+}
+.pricing-quote-right img {
+    width: 100%;
+    height: 100%;
+}
+.pricing-item-quote {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #7c8595;
+    font-weight: 50;
+    line-height: 38px;
+    font-size: 28px;
+}
 @media screen and (max-width: 1200px) {
     .pricing-items {
         width: 95%;

@@ -26,6 +26,57 @@
     font-size: 17px;
     padding: 10px 0px;
 }
+.features-carousel {
+    background-color: #fafbfc;
+    padding: 50px 400px;
+}
+.features-carousel-item {
+    text-align: center;
+}
+.features-carousel-image {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto 20px;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 20%);
+}
+.features-carousel-item img {
+    width: 100%;
+    border-radius: 50%;
+}
+.features-carousel-text {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #7c8595;
+    line-height: 28px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.features-carousel-author {
+    font-family: 'Dosis', sans-serif;
+    color: #1e90ff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.features-carousel-indexs {
+    display: flex;
+    justify-content: center;
+}
+.features-carousel-index {
+    width: 25px;
+    height: 7px;
+    background-color: #e0e0e0;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+.features-active-slide {
+    display: block;
+}
+.features-active-index {
+    background-color: #1e90ff;
+}
 @media screen and (max-width: 1200px) {
     .features-items {
         width: 95%;

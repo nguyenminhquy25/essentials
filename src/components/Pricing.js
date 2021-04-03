@@ -15,6 +15,8 @@ const Pricing = () => {
                         "50 Mailboxes, 90 Gb Storage", "Dedicated Account Manager", "24/7 Priority Support"]}/>
             </div>
             <PricingQuote />
+            <PricingLogos />
+            <PricingQuestions />
         </div>  
     )
 };
@@ -46,7 +48,7 @@ const PricingBenefit = (props) => {
         </>
     );
 };
-const PricingQuote= (props) => {
+const PricingQuote = (props) => {
     return (
         <div className="pricing-quote">
             <div className="pricing-quote-left">
@@ -60,5 +62,40 @@ const PricingQuote= (props) => {
             </div>
         </div>
     ); 
+};
+const PricingLogos = (props) => {
+    return (
+        <div className="pricing-logos">
+            <div className="pricing-logos-title">Trusted by over 250 great businesses</div>
+            <div className="pricing-logos-items">
+                <div className="pricing-logos-item">
+                    <img src="images/award4a.png"></img>
+                </div>
+                <div className="pricing-logos-item">
+                    <img src="images/award1a.png"></img>
+                </div>
+                <div className="pricing-logos-item">
+                    <img src="images/award5.png"></img>
+                </div>
+                <div className="pricing-logos-item">
+                    <img src="images/award3a.png"></img>
+                </div>
+            </div>
+        </div>
+    );
+};
+const PricingQuestions = () => {
+    return (
+        <div className="pricing-questions">
+            <div className="pricing-questions-left"><img src="images/img4.jpg" className="pricing-questions-image"></img></div>
+            <div className="pricing-questions-right">
+                <h3 className="pricing-questions-title">Frequently Asked Questions</h3>
+                <h4 className="pricing-question">Email and user settings</h4>
+                <h4 className="pricing-question">Import new billing system data</h4>
+                <h4 className="pricing-question">Working with integrated apps</h4>
+                <h4 className="pricing-question">Two-factor authentication</h4>
+            </div>
+        </div>
+    );
 };
 export default Pricing;

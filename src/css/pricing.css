@@ -93,7 +93,7 @@
     width: 50%;
 }
 .pricing-quote-right {
-    width: 40%;
+    width: 400px;
 }
 .pricing-quote-right img {
     width: 100%;
@@ -106,6 +106,82 @@
     font-weight: 50;
     line-height: 38px;
     font-size: 28px;
+    margin: 10px 0px 20px; 
+    text-align: center;
+}
+.pricing-item-author {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: #071e55;
+    padding: 5px 0px 10px;
+}
+.pricing-item-position {
+    text-align: center;
+    color: #017df7;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.pricing-logos {
+    text-align: center;
+    background-color: #fafbfc;
+    padding: 50px;
+}
+.pricing-logos-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-logos-title {
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    color: #071e55;
+    font-weight: 600;
+}
+.pricing-logos-item {
+    max-width: 200px;
+    opacity: 0.5;
+    margin: 30px;
+    transition: all 0.5s;
+}
+.pricing-logos-item:hover {
+    opacity: 1;
+}
+.pricing-logos-item img {
+    width: 100%;
+}
+.pricing-questions {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    border: 1px solid #efefef;
+}
+.pricing-questions-left {
+    width: 600px;
+    padding: 20px;
+}
+.pricing-questions-right {
+    width: 40%;
+    padding: 20px;
+}
+.pricing-questions-left img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 20%);
+}
+.pricing-questions-title {
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    color: #071e55;
+    padding: 0px 0px 20px;
+}
+.pricing-question {
+    font-family: 'Dosis', sans-serif;
+    color: #071e55;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(239, 239, 239);
 }
 @media screen and (max-width: 1200px) {
     .pricing-items {
@@ -119,5 +195,49 @@
     .pricing-item {
         width: 70%;
         margin: 0px auto 30px;
+    }
+    .pricing-quote-left {
+        width: 60%;
+    }
+    .pricing-quote-right {
+        width: 300px;
+        padding-top: 20px;
+    }
+    .pricing-quote {
+        padding: 50px 50px 0px;
+    }
+    .pricing-item-quote {
+        font-size: 25px;
+    }
+    .pricing-questions-left {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pricing-quote {
+        flex-wrap: wrap;
+    }
+    .pricing-quote-left {
+        width: 100%;
+    }
+    .pricing-quote-right {
+        width: 100%;
+    }
+    .pricing-logos-items {
+        flex-wrap: wrap;
+    }
+    .pricing-logos-item {
+        width: 40%;
+    }
+    .pricing-questions {
+        flex-wrap: wrap;
+    }
+    .pricing-questions-left {
+        width: 95%;
+        margin: auto;
+    }
+    .pricing-questions-right {
+        width: 95%;
+        margin: auto;
     }
 }
